@@ -1,0 +1,44 @@
+{
+	"name"              : "wcm/wp-language-installer-plugin",
+	"type"              : "composer-plugin",
+	"description"       : "Composer installer to install WordPress plugin and theme translation files to custom paths.",
+	"license"           : "MIT",
+	"authors"           : [
+		{
+			"name"  : "Franz Josef Kaiser",
+			"email" : "wecodemore@gmail.com"
+		}
+	],
+	"minimum-stability" : "dev",
+	"prefer-stable"     : true,
+	"keywords"          : [
+		"composer",
+		"composer-plugin",
+		"composer-installer",
+		"wordpress",
+		"translation"
+	],
+	"autoload"          : {
+		"psr-4" : {
+			"WCM\\Composer\\WPTranslation\\" : "src/"
+		}
+	},
+	"extra"             : {
+		"class"        : [
+			"WCM\\WPTranslation\\ComposerPlugin"
+		],
+		"branch-alias" : {
+			"dev-master" : "1.x-dev"
+		}
+	},
+	"require"           : {
+		"php"                 : ">=5.5",
+		"composer-plugin-api" : "^1.0"
+	},
+	"require-dev"       : {
+		"composer/composer" : "^1.0"
+	},
+	"config"            : {
+		"optimize-autoloader" : true
+	}
+}
