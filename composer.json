@@ -1,5 +1,5 @@
 {
-	"name"              : "wcm/wp-language-installer-plugin",
+	"name"              : "wcm/wp-translation-installer-plugin",
 	"type"              : "composer-plugin",
 	"description"       : "Custom Composer installer to install WordPress plugin and theme translation files to custom paths.",
 	"license"           : "MIT",
