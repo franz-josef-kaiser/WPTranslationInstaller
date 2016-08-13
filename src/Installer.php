@@ -11,9 +11,22 @@
 namespace WCM\WPTranslation;
 
 use Composer\Installer\InstallerInterface;
-
+use Composer\Package\PackageInterface;
 use Composer\Installer\LibraryInstaller;
 
 class Installer extends LibraryInstaller
 {
+	/**
+	 * @param PackageInterface $package
+	 * @return string|void
+	 */
+	public function getInstallPath( PackageInterface $package )
+	{
+		return parent::getInstallPath( $package );
+	}
+
+	public function supports( $packageType )
+	{
+		return parent::supports( $packageType );
+	}
 }
