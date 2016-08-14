@@ -13,6 +13,7 @@ namespace WCM\WPTranslation;
 use Composer\Composer;
 use Composer\IO\IOInterface;
 use Composer\Plugin\PluginInterface;
+use Composer\Script\Event;
 use Composer\EventDispatcher\EventSubscriberInterface;
 
 class ComposerPlugin
@@ -45,7 +46,7 @@ class ComposerPlugin
 	/**
 	 * The actual command
 	 */
-	public function run() {
-		var_dump( func_get_args() );
+	public function run( Event $event ) {
+		
 	}
 }
